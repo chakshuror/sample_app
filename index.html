@@ -1,6 +1,37 @@
 <!DOCTYPE html>
 <html>
 <body>
+
+  <ul class="nav nav-tabs">
+    <li class="nav-item"><a href="#tab1" role="tab" &#x27;aria-controls&#x27;="tab1" &#x27;aria-selected&#x27;="true" id="tab1-link" class="nav-link">Tab 1</a></li>
+    <li class="nav-item"><a href="#tab2" role="tab" &#x27;aria-controls&#x27;="tab2" &#x27;aria-selected&#x27;="false" id="tab2-link" class="nav-link">Tab 2</a></li>
+  </ul>
+  <!-- <script>
+    $(document).ready(function() {
+    // Redirect to Google when clicking on Tab 1
+      $('#tab1-link').on('click', function(e) {
+        e.preventDefault();
+        window.location.href = 'https://www.google.com';
+      });
+
+      // Redirect to Facebook when clicking on Tab 2
+      $('#tab2-link').on('click', function(e) {
+        e.preventDefault();
+        window.location.href = 'https://www.facebook.com';
+      });
+    });
+  </script> -->
+  <!-- Qualaroo for netlify.app -->
+  <!-- Paste this code right after the <body> tag on every page of your site. -->
+  <script type="text/javascript">
+    var _kiq = _kiq || [];
+    (function(){
+      setTimeout(function(){
+      var d = document, f = d.getElementsByTagName('script')[0], s = d.createElement('script'); s.type = 'text/javascript';
+      s.async = true; s.src = 'https://cl.qualaroo.com/ki.js/81762/jfv.js'; f.parentNode.insertBefore(s, f);
+      }, 1);
+    })();
+  </script>
 <!-- Qualaroo for localhost -->
 <!-- Paste this code right after the <body> tag on every page of your site. -->
 <!-- <script type="text/javascript">
@@ -40,6 +71,7 @@
       }, 1);
     })();
   </script>
+
   <h1>My First Heading</h1>
 
 <p>My first paragraph.</p>
